@@ -3,6 +3,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 body{
     background: #222;
     color: #fff;
@@ -98,21 +99,67 @@ body{
 
 #chef{
     height: 300px;
-    width: 320px;
+    width: 310px;
     border-radius: 50%;
+    border:2px solid rgb(189, 101, 1);
 }
 
 /* menu */
 
 #menu-banner{
-    height: 100%;
+    height: 1400px;
     width: 100%;
-    background: url(../src/images/menu-background.jpeg);
+    background: url(../src/images/menu-background.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
+    background-size: contain;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#menu{
+    height:1400px;
+    max-width: 700px;
+    min-width: 440px;
+    width: 70vw;
+    padding: 80px 20px;
+    background:#111;
+    display: flex;
+    flex-direction: column;
+}
+
+.soup-container{
+    display: flex;
+    height: 150px;
+    width:100%;
+}
+
+.soup-container:nth-child(even){
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.empty{
+    height: 100%;
+    width: 50%;
+}
+
+.soup{
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+
+}
+
+.soup-text{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 40%;
+    margin: 0 10px;
+    border-bottom: 2px dotted gold; 
+    justify-content: center;
 }
